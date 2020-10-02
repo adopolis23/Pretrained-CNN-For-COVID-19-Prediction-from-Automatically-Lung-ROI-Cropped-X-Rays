@@ -9,6 +9,8 @@ The Data includes 1140 images from three sources:
 
 3- The Institute for Diagnostic and Interventional Radiology, Hannover Medical School, Hannover, Germany
 
+The data was extracted and converted to 8 bits png format.
+
 Download from here:
 
 The pre-trained Segmentation U-net model can be downloaded from here: 

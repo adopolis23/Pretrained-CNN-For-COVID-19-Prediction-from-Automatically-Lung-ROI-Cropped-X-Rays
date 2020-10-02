@@ -3,7 +3,7 @@ Pretrained CNN For COVID-19 Prediction from Automatically Lung ROI Cropped X-Ray
 
 The Data includes 1140 images from three sources:
 
-1-The Valencian Region Medical54ImageBank (BIMCV) 
+1-The Valencian Region Medical ImageBank (BIMCV) 
 
 2-TCIA
 

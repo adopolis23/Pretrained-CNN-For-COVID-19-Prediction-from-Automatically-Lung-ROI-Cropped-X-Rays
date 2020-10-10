@@ -14,3 +14,7 @@ The data was extracted and converted to 8 bits png format. Download from <a href
 The pre-trained Segmentation U-net model can be downloaded from <a href="https://drive.google.com/file/d/14brQsEFOJOKCo0qg0DXhfGVSf3RACojX/view?usp=sharing">[here]</a>
 
 The pre-trained model for COVID-19 prediction can be found <a href="https://drive.google.com/file/d/1cayroyPP8QS9Z525mCh2SPULMx_egOe_/view?usp=sharing">[here]</a>
+
+run: python test.py
+
+For questions, email us at: kbenahmed@usf.edu

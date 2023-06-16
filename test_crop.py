@@ -1,11 +1,12 @@
 import tensorflow
 from keras import backend as K
 K.clear_session()
-from keras.models import Model, Input
+from keras.models import Model
+from tensorflow.keras.layers import Input
 from keras.applications.vgg16 import preprocess_input, decode_predictions
 from keras.layers import Add, Activation, Dropout, Flatten, Dense
 from keras.layers.convolutional import Convolution2D, MaxPooling2D, AveragePooling2D
-from keras.layers.normalization import BatchNormalization
+from tensorflow.keras.layers import BatchNormalization
 from keras.layers import Conv2D, Concatenate
 from keras.layers import SeparableConv2D
 from scipy.ndimage.interpolation import zoom
@@ -13,9 +14,12 @@ import statistics
 from skimage import img_as_ubyte
 from skimage.segmentation import mark_boundaries
 import numpy as np
-from keras.backend import tensorflow_backend
+
+#from tensorflow.keras.backend import tensorflow_backend
+import keras.backend as tensorflow_backend
+
 from keras.preprocessing import image
-from keras.preprocessing.image import load_img, img_to_array
+from tensorflow.keras.utils import load_img, img_to_array
 import matplotlib.pyplot as plt
 from keras.layers import ZeroPadding2D, GlobalAveragePooling2D
 import time
@@ -29,7 +33,7 @@ import numpy as np
 import zlib
 import pandas as pd
 from sklearn.metrics import confusion_matrix
-from keras.preprocessing.image import img_to_array
+from tensorflow.keras.utils import img_to_array
 from keras.optimizers import Adam, SGD
 from sklearn.metrics import precision_recall_curve
 from sklearn.metrics import average_precision_score
@@ -60,7 +64,7 @@ from keras.applications.vgg16 import VGG16
 from keras.applications.inception_resnet_v2 import InceptionResNetV2
 from keras.applications.inception_v3 import InceptionV3
 from keras.applications.xception import Xception
-from keras.applications.resnet50 import ResNet50
+from tensorflow.keras.applications.resnet50 import ResNet50
 from keras.applications.densenet import DenseNet121
 from keras.preprocessing.image import ImageDataGenerator
 from keras.utils import to_categorical

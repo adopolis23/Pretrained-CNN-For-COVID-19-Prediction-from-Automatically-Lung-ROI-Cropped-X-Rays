@@ -2,9 +2,10 @@ import os, sys
 import SimpleITK as sitk
 import keras
 import tensorflow as tf
+import tensorflow
 import numpy as np
 np.random.seed(2016)
-from keras.preprocessing.image import img_to_array
+from tensorflow.keras.utils import img_to_array
 import random as rn
 rn.seed(12345)
 from keras import backend as K
@@ -17,9 +18,9 @@ import math
 import pickle
 import datetime
 from keras.layers.core import Reshape
-from keras.layers.recurrent import LSTM,GRU
+from tensorflow.keras.layers import LSTM,GRU
 from keras.models import Model
-from keras.applications.resnet50 import ResNet50
+from tensorflow.keras.applications.resnet50 import ResNet50
 from keras.layers import Dense, GlobalAveragePooling2D
 from keras.applications import vgg16 as keras_vgg16
 from keras.layers import BatchNormalization
@@ -31,7 +32,7 @@ import gc
 import math
 import pandas as pd
 import shutil
-from test_crop import generate_mask, generate_bounding_box, dcm2png8bits
+from test_crop import generate_mask, generate_bounding_box
 from keras.models import load_model
 img_rows, img_cols, img_channel = 224, 224, 3
 
@@ -50,7 +51,7 @@ num = len(Files)
 print("Info: Num_Inputs =:", num)
 
 
-dcm2png8bits(test_path, png_path)
+#dcm2png8bits(test_path, png_path)
 
 generate_mask(png_path, num, mask_path)
 
